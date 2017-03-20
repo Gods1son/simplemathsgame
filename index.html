@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Maths game</title>
+            <script src="jquery-3.1.1.js"></script>
+            <script src="indextwo.js"></script>
+            <link rel="stylesheet" href="indexcss.css">
+
+        </head>
+        <body>
+            <div id="bodyholder">
+            <h1>Solve the mathematics and put the answer in the box</h1>
+          <div style="text-align:center;">
+        <span id="firstnumber" class="question"></span>
+          <span id="sign" class="question"></span>
+          <span id="secondnumber" class="question"></span>
+            <span id="solution"></span><br>
+            <input type="text" id="youranswer" oninput="checkAnswer()" autofocus><br>
+                </div>
+
+                <div style="text-align:center;">
+            <h2> Level: <span id="level"></span></h2>
+            <h2>Score: <span id="score"></span></h2>
+            <h2>Missed: <span id="missed"></span></h2>
+            <h2>Timer: <span id="timer"></span></h2>
+            <h2 id="misser" style="display:none;color:red">Wrong Answer!!!</h2>
+            <h2 id="correct" style="display:none;color:green">Congratulations!!!</h2>
+                </div>
+            <!--<button onclick="add1()">1</button>
+            <button onclick="add2()">2</button>-->
+            </div>
+
+
+
+
+
+        </body>
+</html>

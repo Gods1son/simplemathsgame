@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html {
+    background-image: url(mathimage2.jpg);
+}
+
+body{
+    width:50vw;
+    margin:0 auto;
+}
+
+#bodyholder{
+    margin-top: 15vh;
+    border-radius: 15px;
+    background-color: darksalmon;
+    line-height: 2.5em;
+    padding: 30px;
+}
+
+.question {
+    font-size: 3em;
+    font-weight: bold;
+    color:darkblue;
+    }
+
+#youranswer {
+    font-size: 2em;
+    border: 3px groove red;
+    text-align: center;
+    font-weight: bold;
+    color:brown;
+    }

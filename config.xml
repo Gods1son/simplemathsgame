@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+        id="com.phonegap.basicmathgame"
+        version="1.0.0"
+        xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Basic Math Game</name>
+    <description>
+        Simple Maths Game To Tease The Brain
+    </description>
+    <author email="tolulopeibiyode@gmail.com" href="#">
+        Gods1son
+    </author>
+    <preference name="orientation" value="portrait"/>
+    <preference name="permissions" value="none"/>
+    <content src="index.html" />
+    <icon height="48" src="android-icon-48x48.png" width="48"/>
+</widget>
