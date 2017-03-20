@@ -14,7 +14,7 @@ body{
 
 #bodyholder{
     width: 80vw;
-    height: 70vh;
+    height: 600px;
     margin:60px auto;
     border-radius: 15px;
     background-color: darksalmon;
@@ -34,4 +34,5 @@ body{
     text-align: center;
     font-weight: bold;
     color:brown;
+    width: 300px;
     }
