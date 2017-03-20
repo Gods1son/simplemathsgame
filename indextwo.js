@@ -180,8 +180,12 @@ $(document).ready(function(){
     window.onblur = function() { clearInterval(t);}
     window.onfocus = function() { Timer(); }
     document.addEventListener("pause", onPause, false);
+    document.addEventListener("resume", onResume, false);
      function onPause() {
          clearInterval(t);
+    }
+    function onResume() {
+         Timer();
     }
 
 /*adding keyboard to screen
