@@ -3,6 +3,7 @@
         id="com.phonegap.basicmathgame"
         version="1.0.0"
         xmlns="http://www.w3.org/ns/widgets"
+        xmlns:android = "http://schemas.android.com/apk/res/android"
         xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Basic Math Game</name>
     <description>
@@ -13,6 +14,11 @@
     </author>
     <preference name="orientation" value="portrait"/>
     <preference name="permissions" value="none"/>
+    <preference name="KeepRunning" value="false"/>
     <content src="index.html" />
     <icon height="48" src="android-icon-48x48.png" width="48"/>
+
+    <gap:config-file platform="android" parent="/manifest/application">
+    <activity android:launchMode="singleInstance" />
+</gap:config-file>
 </widget>

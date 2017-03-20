@@ -179,6 +179,10 @@ $(document).ready(function(){
 })
     window.onblur = function() { clearInterval(t);}
     window.onfocus = function() { Timer(); }
+    document.addEventListener("pause", onPause, false);
+     function onPause() {
+         clearInterval(t);
+    }
 
 /*adding keyboard to screen
 function add1(){
