@@ -23,6 +23,63 @@ var divide = function(a, b) {
     return a / b;
 }
 
+//button one click
+function one_click(){
+    document.getElementById("youranswer").value += 1;
+}
+
+//button two click
+function two_click(){
+    document.getElementById("youranswer").value += 2;
+}
+
+//button three click
+function three_click(){
+    document.getElementById("youranswer").value += 3;
+}
+
+//button four click
+function four_click(){
+    document.getElementById("youranswer").value += 4;
+}
+
+//button five click
+function five_click(){
+    document.getElementById("youranswer").value += 5;
+}
+
+//button six click
+function six_click(){
+    document.getElementById("youranswer").value += 6;
+}
+
+//button seven click
+function seven_click(){
+    document.getElementById("youranswer").value += 7;
+}
+
+//button eight click
+function eight_click(){
+    document.getElementById("youranswer").value += 8;
+}
+
+//button nine click
+function nine_click(){
+    document.getElementById("youranswer").value += 9;
+}
+
+//button zero click
+function zero_click(){
+    document.getElementById("youranswer").value += 0;
+}
+
+//button backspace click
+function backspace(){
+    var current = document.getElementById("youranswer").value;
+    var sliced = current.slice(0,(current.length - 1))
+    document.getElementById("youranswer").value = sliced;
+}
+
   function Timer(){
 
       t = setInterval(function addone(){
@@ -137,7 +194,7 @@ var Maths = function(){
 }
 
 function checkAnswer(){
-    if(document.getElementById("youranswer").value.length == cLength){
+ //   if(document.getElementById("youranswer").value.length == cLength){
         if(document.getElementById("youranswer").value == c){
             score += 10;
             level++;
@@ -165,7 +222,7 @@ function checkAnswer(){
             document.getElementById("misser").style.display = "none";
             },1000)
         }
-    }
+  //  }
 }
 
 

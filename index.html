@@ -9,31 +9,47 @@
 
         </head>
         <body>
-            <div id="bodyholder">
-            <h1>Solve the mathematics and put the answer in the box</h1>
-            <img id="misser" style="display:none;margin-left:20vw" src="misser.gif" width="180px">
-            <img id="correct" style="display:none;margin-left:18vw" src="correctman.png" width="220px">
+            <header>
+                <h1>Maths Game</h1>
+
+            </header>
+
+                <div id="bodyholder">
+
+            <div id="imageholder">
+            <img id="misser" style="display:none;width:100%;height:100%" src="misser.gif">
+            <img id="correct" style="display:none;width:100%;height:100%" src="correctman.png">
+            </div>
+
           <div style="text-align:center;">
         <span id="firstnumber" class="question"></span>
           <span id="sign" class="question"></span>
           <span id="secondnumber" class="question"></span>
             <span id="solution"></span><br>
-            <input type="number" id="youranswer" oninput="checkAnswer()" autofocus><br>
+              <h1 style="text-align:center;">Type answer</h1>
+            <input type="text" id="youranswer" autofocus><br>
                 </div>
 
-                <div style="text-align:center;">
+            <!--<button onclick="add1()">1</button>
+            <button onclick="add2()">2</button>-->
+                <div id="buttonholders">
+            <p><button id="backspace" onclick="backspace()" style="margin-left:120px;">&#8592;</button><button id="Enter" onclick="checkAnswer()" style="width:auto">CHECK</button></p>
+
+            <p><button id="one" onclick="one_click()">1</button><button id="two" onclick="two_click()">2</button><button id="three" onclick="three_click()">3</button><button id="four" onclick="four_click()">4</button><button id="five" onclick="five_click()">5</button></p>
+
+            <p><button id="six" onclick="six_click()">6</button><button id="seven" onclick="seven_click()">7</button><button id="eight" onclick="eight_click()">8</button><button id="nine" onclick="nine_click()">9</button><button id="zero" onclick="zero_click()">0</button></p>
+
+            </div>
+                    <div id="scoreboard" style="text-align:center;">
             <h2> Level: <span id="level"></span></h2>
             <h2>Score: <span id="score"></span></h2>
             <h2>Missed: <span id="missed"></span></h2>
             <h2>Timer: <span id="timer"></span></h2>
                 </div>
-            <!--<button onclick="add1()">1</button>
-            <button onclick="add2()">2</button>-->
             </div>
 
-
-
-
-
+            <footer>
+                <h2 style="padding-bottom:50px;">Have Fun...Work the Brain</h2>
+            </footer>
         </body>
 </html>
