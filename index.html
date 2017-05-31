@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Maths game</title>
+            <script src="jquery-3.1.1.js"></script>
+            <script type="text/javascript" src="cordova.js"></script>
+            <script src="indextwo.js"></script>
+            <link rel="stylesheet" href="indexcss.css">
+
+        </head>
+        <body>
+            <header>
+                <h2 style="padding-top:5px;">Maths Game</h2>
+
+            </header>
+
+                <div id="bodyholder">
+
+            <div id="imageholder">
+            <img id="misser" style="display:none;width:100%;height:100%" src="misser.gif">
+			<img id="person" style="display:block;width:100%;height:100%" src="smartperson.png">
+            <img id="correct" style="display:none;width:100%;height:100%" src="correctman.png">
+            </div>
+
+          <div style="text-align:center;">
+        <span id="firstnumber" class="question"></span>
+          <span id="sign" class="question"></span>
+          <span id="secondnumber" class="question"></span>
+            <span id="solution"></span><br>
+              <h3 style="text-align:center;">Type answer</h3>
+            <input type="text" id="youranswer" class='answer' autofocus><br>
+                </div>
+
+            <!--<button onclick="add1()">1</button>
+            <button onclick="add2()">2</button>-->
+                <div id="buttonholders">
+            <p><button id="backspace" onclick="backspace()" style="margin-left:60px;" class="buttons">&#8592;</button></p>
+
+            <p><button id="one" onclick="one_click()" class="buttons">1</button><button id="two" onclick="two_click()" class="buttons">2</button><button id="three" onclick="three_click()" class="buttons">3</button><button id="four" onclick="four_click()" class="buttons">4</button><button id="five" onclick="five_click()" class="buttons">5</button></p>
+
+            <p><button id="six" onclick="six_click()" class="buttons">6</button><button id="seven" onclick="seven_click()" class="buttons">7</button><button id="eight" onclick="eight_click()" class="buttons">8</button><button id="nine" onclick="nine_click()" class="buttons">9</button><button id="zero" onclick="zero_click()" class="buttons">0</button></p>
+
+            </div>
+                    <div id="scoreboard" style="text-align:center;">
+            <h2> Level: <span id="level"></span></h2>
+            <h2>Score: <span id="score"></span></h2>
+            <h2>Missed: <span id="missed"></span></h2>
+            <h2>Timer: <span id="timer"></span></h2>
+                </div>
+            </div>
+
+            <footer>
+                <marquee behavior="alternate"><h2 style="padding-top:5px;">Have Fun...Work the Brain</h2></marquee>
+            </footer>
+        </body>
+</html>
